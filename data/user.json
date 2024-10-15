@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "$2b$10$abcde...hashedPassword",
+      "role": "admin",
+      "phoneNumber": "081234567890",
+      "address": "Jakarta, Indonesia"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "email": "user1@example.com",
+      "password": "$2b$10$abcde...hashedPassword",
+      "role": "customer",
+      "phoneNumber": "081234567891",
+      "address": "Bandung, Indonesia"
+    }
+  ]

@@ -1,0 +1,22 @@
+[
+    {
+      "id": 1,
+      "name": "Basic Cotton T-Shirt",
+      "description": "Comfortable cotton t-shirt available in various colors.",
+      "price": 199000,
+      "stock": 50,
+      "imgUrl": "https://example.com/products/tshirt1.jpg",
+      "categoryId": 1,
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "name": "Slim Fit Jeans",
+      "description": "Stylish slim fit jeans with modern cut.",
+      "price": 299000,
+      "stock": 30,
+      "imgUrl": "https://example.com/products/jeans1.jpg",
+      "categoryId": 2,
+      "authorId": 1
+    }
+  ]
