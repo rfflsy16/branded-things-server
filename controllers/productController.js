@@ -1,6 +1,7 @@
 const { where } = require('sequelize')
 const { Product, User, Category } = require('../models')
 const handleError = require('../handleError')
+const imagekit = require('../helpers/imagekit.js')
 
 class ProductController {
     static async add(req, res, next) {
@@ -86,6 +87,15 @@ class ProductController {
             res.status(200).json({
                 message: `Success delete product by id ${id}`,
             })
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    static async postMiddleware(req, res, next) {
+        try {
+            const { id } = req.params
+
         } catch (error) {
             console.log(error)
         }

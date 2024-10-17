@@ -3,8 +3,9 @@ const userController = require('../controllers/userController.js')
 const product = require('./product.js')
 const category = require('./category.js')
 
-router.post('/register', userController.register)
 router.post('/login', userController.login)
+
+router.post('/register', userController.register)
 router.use('/product', product)
 router.use('/category', category)
 

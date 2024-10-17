@@ -1,12 +1,11 @@
 "use strict"
 
-const { where } = require('sequelize')
 const { User } = require('../models')
 const { compare } = require('../helpers/bcrypt')
 const { signToken } = require('../helpers/jwt')
 
 class UserController {
-    static async register(req, res, next) {
+    static async register(req, res, next) { //add-user => boleh diakses hanya admin. admin bisa add user yaitu staff(role)
         try {
             const {username, email, password, role, phoneNumber, address} = req.body
             const user = await User.create({username, email, password, role, phoneNumber, address})
