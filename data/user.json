@@ -13,7 +13,7 @@
       "username": "user1",
       "email": "user1@example.com",
       "password": "$2b$10$abcde...hashedPassword",
-      "role": "customer",
+      "role": "admin",
       "phoneNumber": "081234567891",
       "address": "Bandung, Indonesia"
     }

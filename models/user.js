@@ -8,7 +8,7 @@ module.exports = (sequelize, DataTypes) => {
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
-     */
+     */ 
     static associate(models) {
       // define association here
       User.hasMany(models.Product, { foreignKey: 'authorId'})
@@ -17,15 +17,19 @@ module.exports = (sequelize, DataTypes) => {
   User.init({
     username:{
       type : DataTypes.STRING,
+      allowNull: false,
       validate: {
         notNull : {
           msg : 'username is required'
         },
-        notEmpty: 'username is required'
+        notEmpty: {
+          msg : 'username is required'
+        }
       }
     },
     email: {
       type : DataTypes.STRING,
+      allowNull: false,
       unique : {
         msg : 'email must be unique'
       },
@@ -41,6 +45,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     password: {
       type : DataTypes.STRING,
+      allowNull: false,
       validate: {
         notNull : {
           msg : 'password is required'
@@ -56,21 +61,27 @@ module.exports = (sequelize, DataTypes) => {
     },
     role: {
       type : DataTypes.STRING,
+      allowNull: false,
       defaultValue : 'Staff',
       validate: {
         notNull : {
           msg : 'role is required'
         },
-        notEmpty: 'role is required'
+        notEmpty: {
+          msg: 'role is required'
+        }
       }
     },
     phoneNumber: {
+      allowNull: false,
       type : DataTypes.STRING,
       validate: {
         notNull : {
           msg : 'phoneNumber is required'
         },
-        notEmpty: 'phoneNumber is required'
+        notEmpty: {
+          msg : 'phoneNumber is required'
+        }
       }
     },
     address: DataTypes.STRING
