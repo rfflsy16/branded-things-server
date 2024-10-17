@@ -1,6 +1,7 @@
 const { where } = require('sequelize')
 const { Category } = require('../models')
 
+
 class CategoryController {
     static async delete(req, res, next) {
         try {
@@ -19,8 +20,9 @@ class CategoryController {
             res.status(200).json({
                 message: `Category id ${category.id} is been deleted`
             })
-        } catch (error) {
-            console.log(error)
+        } catch (err) {
+            console.log(err)
+            next(err)
         }
     }
 }

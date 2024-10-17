@@ -7,6 +7,10 @@ const authentication = async (req, res, next) => {
 
         if (!authorization) throw { name: "Unauthorized" }
 
+        const bearer = authorization.split(' ')[0]
+        
+        if(bearer !== 'Bearer') throw { name: 'Unauthorized'}
+
         const access_token = authorization.split(' ')[1]
 
         const payload = verifyToken(access_token)

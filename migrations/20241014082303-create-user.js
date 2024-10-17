@@ -24,7 +24,7 @@ module.exports = {
       },
       role: {
         allowNull: false,
-        defaultValue : 'Staff',
+        defaultValue : 'staff',
         type: Sequelize.STRING
       },
       phoneNumber: {

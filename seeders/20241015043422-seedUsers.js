@@ -12,9 +12,11 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
+   const { hash } = require('../helpers/bcrypt.js')
    const users = require('../data/user.json')
    users.forEach(el => {
     delete el.id
+    el.password = hash(el.password)
     el.updatedAt = el.createdAt = new Date()
    })
 
