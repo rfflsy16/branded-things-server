@@ -1,5 +1,6 @@
 const { Product, User, Category } = require('../models')
 const imagekit = require('../helpers/imagekit.js')
+const { readFile } = require('fs').promises
 
 class ProductController {
     static async add(req, res, next) {
@@ -57,6 +58,7 @@ class ProductController {
             })
         } catch (err) {
             console.log(err)
+            next(err)
         }
     }
 
@@ -114,7 +116,19 @@ class ProductController {
 
             if(!product) throw {name: 'ProductNotFound'}
 
-            
+            const imageInBase64 = req.file.buffer.toString("base64");
+            // console.log(imageInBase64)
+
+            const result = await imagekit.upload({
+                file: imageInBase64,
+                fileName: req.file.originalname,
+                tags: ["test"]
+            })
+
+            res.status(201).json({
+                message: 'Success upload ImgURL',
+                result
+            })
         } catch (err) {
             next(err)
         }

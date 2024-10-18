@@ -1,9 +1,9 @@
 const Imagekit = require('imagekit')
 
 const imagekit = new Imagekit({
-    publicKey : "public_McTeHru8wSwVX7wx/pmjwinkmZ4=",
-    privateKey : "private_nfEH+PBTYtcMibPUIA/EpEEXsOM=",
-    urlEndpoint : "https://ik.imagekit.io/raffles16"
+    publicKey : process.env.PUBLIC_KEY,
+    privateKey : process.env.PRIVATE_KEY,
+    urlEndpoint : process.env.URL_END_POINT
 })
 
 module.exports = imagekit

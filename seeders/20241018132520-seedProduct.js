@@ -12,16 +12,16 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-   const category = require('../data/category.json')
-   category.forEach(el => {
+   const product = require('../data/product.json')
+   product.forEach(el => {
     delete el.id
     el.updatedAt = el.createdAt = new Date()
    })
-   await queryInterface.bulkInsert('Categories', category, {})
+   await queryInterface.bulkInsert('Products', product, {})
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('Categories', null, {})
+    await queryInterface.bulkDelete('Products', null, {})
     /**
      * Add commands to revert seed here.
      *

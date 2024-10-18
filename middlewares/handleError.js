@@ -4,10 +4,12 @@ const handleError = ( err, req, res, next) => {
     let message = 'Internal Server Error'
 
     if (err.name === 'LoginError') {
+        status = 400
+        message = 'Unable to login'
+    }
     if (err.name == 'SequelizeValidationError') {
         status = 400
         message = err.errors[0].message
-    }
 }
     if (err.name === 'NotAdmin') {
         status = 403

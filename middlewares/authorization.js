@@ -1,36 +1,39 @@
-const { Product } = require('../models')
-const checkAdmin = async (req, res, next) => {
-    try {
-        // console.log(req.loginInfo)
-        const { role } = req.loginInfo
+const { Product, User } = require('../models')
+// const checkAdmin = async (req, res, next) => {
+//     try {
+//         // console.log(req.loginInfo)
+//         const { role } = req.loginInfo
 
-        if (role !== 'admin') throw {name: 'NotAdmin'}
+//         if (role !== 'admin') throw {name: 'NotAdmin'}
 
-        next()
-    } catch (err) {
-        next(err)
-    }
-}
+//         next()
+//     } catch (err) {
+//         next(err)
+//     }
+// }
 
 const checkStaffAuthorOrAdmin = async(req, res, next) => {
+    const {role, userId} = req.loginInfo
     try {
         // console.log(req.params);
-        const role = req.loginInfo.role
-        // console.log(role)
         if (role === 'staff') {
+            const user = await User.findByPk(userId)
+
+            if (!user) throw { name: "Forbidden" }
+
             const { id } = req.params
+
             const product = await Product.findByPk(id)
 
             if(!product) throw { name :'ProductNotFound' }
-            const userId = req.loginInfo.userId
-    
+            
             if(product.authorId !== userId) throw {name : 'notAuthor'}
-            next()
         }
-
+        next()
     } catch (error) {
+         console.log(error)
         next(error)
     }
 }
 
-module.exports = { checkAdmin, checkStaffAuthorOrAdmin }
+module.exports = {checkStaffAuthorOrAdmin }
