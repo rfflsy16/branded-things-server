@@ -1,14 +1,62 @@
 [
-    {
-      "id": 1,
-      "name": "T-Shirts"
-    },
-    {
-      "id": 2,
-      "name": "Jeans"
-    },
-    {
-      "id": 3,
-      "name": "Accessories"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "T-Shirts"
+  },
+  {
+    "id": 2,
+    "name": "Jeans"
+  },
+  {
+    "id": 3,
+    "name": "Accessories"
+  },
+  {
+    "id": 4,
+    "name": "Footwear"
+  },
+  {
+    "id": 5,
+    "name": "Outerwear"
+  },
+  {
+    "id": 6,
+    "name": "Activewear"
+  },
+  {
+    "id": 7,
+    "name": "Formal Wear"
+  },
+  {
+    "id": 8,
+    "name": "Bags"
+  },
+  {
+    "id": 9,
+    "name": "Jewelry"
+  },
+  {
+    "id": 10,
+    "name": "Hats"
+  },
+  {
+    "id": 11,
+    "name": "Sweaters"
+  },
+  {
+    "id": 12,
+    "name": "Shorts"
+  },
+  {
+    "id": 13,
+    "name": "Skirts"
+  },
+  {
+    "id": 14,
+    "name": "Socks"
+  },
+  {
+    "id": 15,
+    "name": "Loungewear"
+  }
+]

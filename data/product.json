@@ -1,22 +1,232 @@
 [
-    {
-      "id": 1,
-      "name": "Basic Cotton T-Shirt",
-      "description": "Comfortable cotton t-shirt available in various colors.",
-      "price": 199000,
-      "stock": 50,
-      "imgUrl": "https://example.com/products/tshirt1.jpg",
-      "categoryId": 1,
-      "authorId": 1
-    },
-    {
-      "id": 2,
-      "name": "Slim Fit Jeans",
-      "description": "Stylish slim fit jeans with modern cut.",
-      "price": 299000,
-      "stock": 30,
-      "imgUrl": "https://example.com/products/jeans1.jpg",
-      "categoryId": 2,
-      "authorId": 1
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Basic Cotton T-Shirt",
+    "description": "Comfortable cotton t-shirt available in various colors.",
+    "price": 199000,
+    "stock": 50,
+    "imgUrl": "https://example.com/products/tshirt1.jpg",
+    "categoryId": 1,
+    "authorId": 1
+  },
+  {
+    "id": 2,
+    "name": "Slim Fit Jeans",
+    "description": "Stylish slim fit jeans with modern cut.",
+    "price": 299000,
+    "stock": 30,
+    "imgUrl": "https://example.com/products/jeans1.jpg",
+    "categoryId": 2,
+    "authorId": 1
+  },
+  {
+    "id": 3,
+    "name": "Leather Jacket",
+    "description": "Genuine leather jacket with a modern look.",
+    "price": 799000,
+    "stock": 15,
+    "imgUrl": "https://example.com/products/jacket1.jpg",
+    "categoryId": 3,
+    "authorId": 2
+  },
+  {
+    "id": 4,
+    "name": "Sneakers",
+    "description": "Comfortable sneakers for daily wear.",
+    "price": 499000,
+    "stock": 60,
+    "imgUrl": "https://example.com/products/sneakers1.jpg",
+    "categoryId": 4,
+    "authorId": 2
+  },
+  {
+    "id": 5,
+    "name": "Formal Shoes",
+    "description": "Stylish formal shoes for office and events.",
+    "price": 599000,
+    "stock": 25,
+    "imgUrl": "https://example.com/products/shoes1.jpg",
+    "categoryId": 5,
+    "authorId": 1
+  },
+  {
+    "id": 6,
+    "name": "Woolen Scarf",
+    "description": "Warm woolen scarf for winter.",
+    "price": 99000,
+    "stock": 80,
+    "imgUrl": "https://example.com/products/scarf1.jpg",
+    "categoryId": 6,
+    "authorId": 3
+  },
+  {
+    "id": 7,
+    "name": "Classic Watch",
+    "description": "Classic design watch with leather strap.",
+    "price": 1299000,
+    "stock": 20,
+    "imgUrl": "https://example.com/products/watch1.jpg",
+    "categoryId": 7,
+    "authorId": 3
+  },
+  {
+    "id": 8,
+    "name": "Sports Cap",
+    "description": "Breathable sports cap for outdoor activities.",
+    "price": 149000,
+    "stock": 70,
+    "imgUrl": "https://example.com/products/cap1.jpg",
+    "categoryId": 8,
+    "authorId": 4
+  },
+  {
+    "id": 9,
+    "name": "Backpack",
+    "description": "Spacious and durable backpack for travel.",
+    "price": 399000,
+    "stock": 40,
+    "imgUrl": "https://example.com/products/backpack1.jpg",
+    "categoryId": 9,
+    "authorId": 4
+  },
+  {
+    "id": 10,
+    "name": "Sunglasses",
+    "description": "UV protected stylish sunglasses.",
+    "price": 259000,
+    "stock": 45,
+    "imgUrl": "https://example.com/products/sunglasses1.jpg",
+    "categoryId": 10,
+    "authorId": 5
+  },
+  {
+    "id": 11,
+    "name": "Wristband",
+    "description": "Stylish wristband with adjustable strap.",
+    "price": 99000,
+    "stock": 100,
+    "imgUrl": "https://example.com/products/wristband1.jpg",
+    "categoryId": 11,
+    "authorId": 5
+  },
+  {
+    "id": 12,
+    "name": "Graphic T-Shirt",
+    "description": "T-shirt with unique graphic design.",
+    "price": 219000,
+    "stock": 50,
+    "imgUrl": "https://example.com/products/tshirt2.jpg",
+    "categoryId": 1,
+    "authorId": 6
+  },
+  {
+    "id": 13,
+    "name": "Hoodie",
+    "description": "Comfortable hoodie with front pockets.",
+    "price": 399000,
+    "stock": 35,
+    "imgUrl": "https://example.com/products/hoodie1.jpg",
+    "categoryId": 3,
+    "authorId": 6
+  },
+  {
+    "id": 14,
+    "name": "Denim Jacket",
+    "description": "Classic denim jacket with button-up front.",
+    "price": 599000,
+    "stock": 18,
+    "imgUrl": "https://example.com/products/jacket2.jpg",
+    "categoryId": 3,
+    "authorId": 2
+  },
+  {
+    "id": 15,
+    "name": "Running Shoes",
+    "description": "Lightweight running shoes for comfort and speed.",
+    "price": 399000,
+    "stock": 25,
+    "imgUrl": "https://example.com/products/shoes2.jpg",
+    "categoryId": 4,
+    "authorId": 4
+  },
+  {
+    "id": 16,
+    "name": "Dress Shirt",
+    "description": "Formal dress shirt in classic fit.",
+    "price": 299000,
+    "stock": 40,
+    "imgUrl": "https://example.com/products/shirt1.jpg",
+    "categoryId": 1,
+    "authorId": 5
+  },
+  {
+    "id": 17,
+    "name": "Leather Belt",
+    "description": "Genuine leather belt with metal buckle.",
+    "price": 199000,
+    "stock": 60,
+    "imgUrl": "https://example.com/products/belt1.jpg",
+    "categoryId": 5,
+    "authorId": 3
+  },
+  {
+    "id": 18,
+    "name": "Winter Gloves",
+    "description": "Warm and durable gloves for winter.",
+    "price": 149000,
+    "stock": 55,
+    "imgUrl": "https://example.com/products/gloves1.jpg",
+    "categoryId": 6,
+    "authorId": 6
+  },
+  {
+    "id": 19,
+    "name": "Casual Shorts",
+    "description": "Comfortable casual shorts for summer.",
+    "price": 249000,
+    "stock": 45,
+    "imgUrl": "https://example.com/products/shorts1.jpg",
+    "categoryId": 2,
+    "authorId": 1
+  },
+  {
+    "id": 20,
+    "name": "Wool Sweater",
+    "description": "Cozy wool sweater for winter days.",
+    "price": 499000,
+    "stock": 25,
+    "imgUrl": "https://example.com/products/sweater1.jpg",
+    "categoryId": 6,
+    "authorId": 6
+  },
+  {
+    "id": 21,
+    "name": "Leather Boots",
+    "description": "Durable leather boots for outdoor adventures.",
+    "price": 799000,
+    "stock": 30,
+    "imgUrl": "https://example.com/products/boots1.jpg",
+    "categoryId": 4,
+    "authorId": 4
+  },
+  {
+    "id": 22,
+    "name": "Athletic Socks",
+    "description": "Breathable and comfortable athletic socks.",
+    "price": 99000,
+    "stock": 90,
+    "imgUrl": "https://example.com/products/socks1.jpg",
+    "categoryId": 7,
+    "authorId": 5
+  },
+  {
+    "id": 23,
+    "name": "Cargo Pants",
+    "description": "Comfortable cargo pants with multiple pockets.",
+    "price": 349000,
+    "stock": 35,
+    "imgUrl": "https://example.com/products/cargopants1.jpg",
+    "categoryId": 2,
+    "authorId": 1
+  }
+]

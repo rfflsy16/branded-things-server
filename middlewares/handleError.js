@@ -1,5 +1,6 @@
 const handleError = ( err, req, res, next) => {
-    console.log(err)
+    // console.log(err)
+    
     let status = 500
     let message = 'Internal Server Error'
 
@@ -10,7 +11,7 @@ const handleError = ( err, req, res, next) => {
     if (err.name == 'SequelizeValidationError') {
         status = 400
         message = err.errors[0].message
-}
+    }
     if (err.name === 'NotAdmin') {
         status = 403
         message = 'you are not Admin'
@@ -66,10 +67,6 @@ const handleError = ( err, req, res, next) => {
     }
 }
     res.status(status).json({ message })
-    res.status(status).json({
-        message
-    })
-    
 }
 
 module.exports = handleError

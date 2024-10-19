@@ -1,6 +1,6 @@
 const { Product, User, Category } = require('../models')
 const imagekit = require('../helpers/imagekit.js')
-const { readFile } = require('fs').promises
+
 
 class ProductController {
     static async add(req, res, next) {
@@ -30,7 +30,7 @@ class ProductController {
                     },
                     {
                         model: Category,
-                    }
+                    } 
                 ]
 
             })

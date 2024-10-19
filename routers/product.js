@@ -8,8 +8,9 @@ router.post('/', productController.add)
 router.get('/', productController.read)
 router.get('/:id', productController.readDetail)
 
-router.put('/:id', checkStaffAuthorOrAdmin, productController.updateById)
-router.patch('/:id',checkStaffAuthorOrAdmin, uploadMiddleware, productController.patchImgUrl)
-router.delete('/:id',checkStaffAuthorOrAdmin, productController.deletebById)
+router.use('/:id', checkStaffAuthorOrAdmin)
+router.put('/:id', productController.updateById)
+router.patch('/:id', uploadMiddleware, productController.patchImgUrl)
+router.delete('/:id', productController.deletebById)
 
 module.exports = router
