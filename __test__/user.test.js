@@ -32,7 +32,55 @@ describe('POST /login', () => {
                 password: 'password123'
             })
             expect(response.status).toBe(200)
-            expect(response.body).toHaveProperty('access_token')
+            expect(response.body).toHaveProperty('access_token', expect.any(String))
+        })
+    })
+    describe('POST /login - fail', () => {
+        it('should be return an error message', async () => {
+            const response = await request(app)
+            .post('/login')
+            .send({
+                email: 'admin@example.com',
+                password: ''
+            })
+            expect(response.status).toBe(401)        
+            expect(response.body.message).toBe('Username/Password salah')
+        })
+    })
+    describe('POST /login - fail', () => {
+        it('should be return an error message', async () => {
+            const response = await request(app)
+            .post('/login')
+            .send({
+                email: '',
+                password: 'password123'
+            })
+            expect(response.status).toBe(401)        
+            expect(response.body.message).toBe('Username/Password salah')
+        })
+    })
+    describe('POST /login - fail', () => {
+        it('should be return an error message', async () => {
+            const response = await request(app)
+            .post('/login')
+            .send({
+                email: 'mamang10@gmail.com',
+                password: 'password123'
+            })
+            expect(response.status).toBe(400)        
+            expect(response.body.message).toBe('Unable to login')
+        })
+    })
+    describe('POST /login - fail', () => {
+        it('should be return an error message', async () => {
+            const response = await request(app)
+            .post('/login')
+            .send({
+                email: 'mamang10@gmail.com',
+                password: 'password12356'
+            })
+            expect(response.status).toBe(400)        
+            expect(response.body.message).toBe('Unable to login')
         })
     })
 })
