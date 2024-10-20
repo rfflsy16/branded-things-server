@@ -294,7 +294,7 @@ describe('PUT /products/:id', () => {
 })
 
 
-// public site
+// public readById 
 describe('GET /pub/:id', () => {
     describe('GET /pub/:id - succeed', () => {
         it('should be return data of detail Products', async () => {
@@ -313,6 +313,101 @@ describe('GET /pub/:id', () => {
 
             expect(response.status).toBe(404)
             expect(response.body.message).toBe(`Data not found`)
+        })
+    })
+})
+
+// public readAll
+describe('GET /pub', () => {
+    describe('GET /pub - succeed', () => {
+        it('should be return an all data of production', async () => {
+            const response = await request(app)
+            .get('/pub')
+
+            expect(response.status).toBe(200)
+            expect(response.body.message).toBe('Success read Products')
+        })
+    })
+    describe('GET /pub - succeed', () => {
+        it('should be return an all data of production', async () => {
+            const response = await request(app)
+            .get('/pub/?filter=2')
+
+            expect(response.status).toBe(200)
+            expect(response.body).toHaveProperty('result')
+            expect(response.body).toBeInstanceOf(Object)
+        })
+    })
+    describe('GET /pub - succeed', () => {
+        it('should be return an all data of production', async () => {
+            const response = await request(app)
+            .get('/pub/?page=1')
+
+            expect(response.status).toBe(200)
+            expect(response.body).toHaveProperty('result')
+            expect(response.body).toBeInstanceOf(Object)
+        })
+    })
+    describe('GET /pub - succeed', () => {
+        it('should be return an all data of production', async () => {
+            const response = await request(app)
+            .get('/pub/?page=1')
+
+            expect(response.status).toBe(200)
+            expect(response.body).toHaveProperty('result')
+            expect(response.body).toBeInstanceOf(Object)
+        })
+    })
+})
+
+describe('DELETE /products', () => {
+    describe('DELETE /products - succeed', () => {
+        it('should be return an message Success delete product', async() => {
+            const response = await request(app)
+            .delete('/products/10')
+            .set('Authorization', `Bearer ${access_token}`)
+
+            expect(response.status).toBe(200)
+            expect(response.body.message).toBe(`Success delete product by id 10`)
+        })
+    })
+    describe('DELETE /products - fail', () => {
+        it('because not login', async() => {
+            const response = await request(app)
+            .delete('/products/10')
+
+            expect(response.status).toBe(401)
+            expect(response.body.message).toBe(`Please login first`)
+        })
+    })
+    describe('DELETE /products - fail', () => {
+        it('because token invalid', async() => {
+            const response = await request(app)
+            .delete('/products/10')
+            .set('Authorization', `Bearer blabala`)
+
+            expect(response.status).toBe(401)
+            expect(response.body.message).toBe(`Please login first`)
+        })
+    })
+    describe('DELETE /products - fail', () => {
+        it('because id not found', async() => {
+            const response = await request(app)
+            .delete('/products/123')
+            .set('Authorization', `Bearer ${access_token}`)
+
+            expect(response.status).toBe(404)
+            expect(response.body.message).toBe(`Data not found`)
+        })
+    })
+    describe('DELETE /products - fail', () => {
+        it('because staff cant delete other data products except his data products', async() => {
+            const response = await request(app)
+            .delete('/products/12')
+            .set('Authorization', `Bearer ${access_token_staff}`)
+
+            expect(response.status).toBe(403)
+            expect(response.body.message).toBe('You aren`t the author of this Product')
         })
     })
 })
