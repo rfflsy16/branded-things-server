@@ -1,21 +1,21 @@
 const { Product, User } = require('../models')
-// const checkAdmin = async (req, res, next) => {
-//     try {
-//         // console.log(req.loginInfo)
-//         const { role } = req.loginInfo
+const checkAdmin = async (req, res, next) => {
+    try {
+        // console.log(req.loginInfo)
+        const { role } = req.loginInfo
 
-//         if (role !== 'admin') throw {name: 'NotAdmin'}
+        if (role !== 'admin') throw {name: 'Forbidden'}
 
-//         next()
-//     } catch (err) {
-//         next(err)
-//     }
-// }
+        next()
+    } catch (err) {
+        next(err)
+    }
+}
 
 const checkStaffAuthorOrAdmin = async(req, res, next) => {
     const {role, userId} = req.loginInfo
     try {
-        // console.log(req.params);
+        console.log(req.params);
         if (role === 'staff') {
             const user = await User.findByPk(userId)
 
@@ -36,4 +36,4 @@ const checkStaffAuthorOrAdmin = async(req, res, next) => {
     }
 }
 
-module.exports = {checkStaffAuthorOrAdmin }
+module.exports = { checkAdmin, checkStaffAuthorOrAdmin }

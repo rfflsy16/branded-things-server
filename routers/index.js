@@ -3,7 +3,7 @@ const userController = require('../controllers/userController.js')
 const product = require('./product.js')
 const category = require('./category.js')
 const handleError = require('../middlewares/handleError.js')
-const {checkStaffAuthorOrAdmin } = require('../middlewares/authorization.js')
+const {checkStaffAuthorOrAdmin, checkAdmin } = require('../middlewares/authorization.js')
 const authentication = require('../middlewares/authentication.js')
 const pub = require('./pub.js')
 
@@ -14,7 +14,7 @@ router.use(authentication)
 
 router.use('/products', product)
 router.use('/categories', category)
-router.post('/add-user', checkStaffAuthorOrAdmin, userController.addUser)
+router.post('/add-user', checkAdmin, userController.addUser)
 
 router.use(handleError)
 

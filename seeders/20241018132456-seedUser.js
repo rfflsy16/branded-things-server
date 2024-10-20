@@ -1,5 +1,7 @@
 'use strict';
 
+const { hash } = require('../helpers/bcrypt.js')
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
@@ -12,7 +14,7 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-   const { hash } = require('../helpers/bcrypt.js')
+
    const users = require('../data/user.json')
    users.forEach(el => {
     delete el.id

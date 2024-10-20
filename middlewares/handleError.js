@@ -12,7 +12,7 @@ const handleError = ( err, req, res, next) => {
         status = 400
         message = err.errors[0].message
     }
-    if (err.name === 'NotAdmin') {
+    if (err.name === 'Forbidden') {
         status = 403
         message = 'you are not Admin'
     }

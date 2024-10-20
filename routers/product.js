@@ -8,7 +8,7 @@ router.post('/', productController.add)
 router.get('/', productController.read)
 router.get('/:id', productController.readDetail)
 
-router.use('/:id', checkStaffAuthorOrAdmin)
+router.use('/:id',checkStaffAuthorOrAdmin)
 router.put('/:id', productController.updateById)
 router.patch('/:id', uploadMiddleware, productController.patchImgUrl)
 router.delete('/:id', productController.deletebById)
