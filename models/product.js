@@ -16,13 +16,90 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Product.init({
-    name: DataTypes.STRING,
-    description: DataTypes.STRING,
-    price: DataTypes.INTEGER,
-    stock: DataTypes.INTEGER,
-    imgUrl: DataTypes.STRING,
-    categoryId: DataTypes.INTEGER,
-    authorId: DataTypes.INTEGER
+    name: {
+      allowNull: false,
+      type: DataTypes.STRING,
+      validate: {
+        notNull: {
+          msg: 'name is required'
+        },
+        notEmpty: {
+          msg: 'name is required'
+        }
+      }
+    },
+    description: {
+      allowNull: false,
+      type: DataTypes.STRING,
+      validate: {
+        notNull: {
+          msg: 'description is required'
+        },
+        notEmpty: {
+          msg: 'description is required'
+        }
+      }
+    },
+    price: {
+      allowNull: false,
+      type: DataTypes.INTEGER,
+      validate: {
+        notNull: {
+          msg: 'price is required'
+        },
+        notEmpty: {
+          msg: 'price is required'
+        }
+      }
+    },
+    stock: {
+      allowNull: false,
+      type: DataTypes.INTEGER,
+      validate: {
+        notNull: {
+          msg: 'stock is required'
+        },
+        notEmpty: {
+          msg: 'stock is required'
+        }
+      }
+    },
+    imgUrl: {
+      allowNull: false,
+      type: DataTypes.STRING,
+      validate: {
+        notNull: {
+          msg: 'imgUrl is required'
+        },
+        notEmpty: {
+          msg: 'imgUrl is required'
+        }
+      }
+    },
+    categoryId: {
+      allowNull: false,
+      type: DataTypes.INTEGER,
+      validate: {
+        notNull: {
+          msg: 'categoryId is required'
+        },
+        notEmpty: {
+          msg: 'categoryId is required'
+        }
+      }
+    },
+    authorId: {
+      allowNull: false,
+      type: DataTypes.INTEGER,
+      validate: {
+        notNull: {
+          msg: 'authorId is required'
+        },
+        notEmpty: {
+          msg: 'authorId is required'
+        }
+      }
+    }
   }, {
     sequelize,
     modelName: 'Product',

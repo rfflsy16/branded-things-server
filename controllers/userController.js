@@ -10,7 +10,7 @@ class UserController {
     static async addUser(req, res, next) { //add-user => boleh diakses hanya admin. admin bisa add user yaitu staff(role)
         try {
             const {username, email, password, role, phoneNumber, address} = req.body
-            const user = await User.create({username, email, password: hash(password), role, phoneNumber, address})
+            const user = await User.create({username, email, password, role, phoneNumber, address})
             res.status(201).json({
                 message: "Success create new user",
                 user

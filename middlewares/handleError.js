@@ -1,5 +1,5 @@
 const handleError = ( err, req, res, next) => {
-    // console.log(err)
+    console.log(err)
     
     let status = 500
     let message = 'Internal Server Error'
@@ -10,12 +10,13 @@ const handleError = ( err, req, res, next) => {
     }
     if (err.name == 'SequelizeValidationError') {
         status = 400
-        message = err.errors[0].message
+        message = err.errors.map( err => err.message)
     }
     if (err.name === 'Forbidden') {
         status = 403
         message = 'you are not Admin'
     }
+
     if (err.name === 'ProductNotFound') {
         status = 404
         message = 'Product Not Found'
@@ -58,14 +59,11 @@ const handleError = ( err, req, res, next) => {
         message = 'You have no access'
     }
 
-    if (err.message === 'NotFound') {
-        status = 404;
-        message = `Data not found`;
-    if (err.name == 'NotFound') {
+    if (err.name === 'notFound') {
+        message = 'Data not found'
         status = 404
-        message = `Data not found`
     }
-}
+
     res.status(status).json({ message })
 }
 

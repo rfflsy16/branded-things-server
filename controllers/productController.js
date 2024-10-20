@@ -82,7 +82,7 @@ class ProductController {
                 products
             })
         } catch (err) {
-            console.log(err)
+            // console.log(err)
             next(err)
         }
     }
