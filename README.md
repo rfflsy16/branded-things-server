@@ -45,48 +45,9 @@ _Response_:
 ```json
 {
     "message": "Success read Products",
-    "result": {
-        "total": 23,
-        "size": 10,
-        "totalPage": 3,
-        "currentPage": 1,
+    "products": {
+        "total": 22,
         "data": [
-            {
-                "id": 1,
-                "name": "Basic Cotton T-Shirt",
-                "description": "Comfortable cotton t-shirt available in various colors.",
-                "price": 199000,
-                "stock": 50,
-                "imgUrl": "https://example.com/products/tshirt1.jpg",
-                "categoryId": 1,
-                "authorId": 1,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
-            },
-            {
-                "id": 2,
-                "name": "Slim Fit Jeans",
-                "description": "Stylish slim fit jeans with modern cut.",
-                "price": 299000,
-                "stock": 30,
-                "imgUrl": "https://example.com/products/jeans1.jpg",
-                "categoryId": 2,
-                "authorId": 1,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
-            },
-            {
-                "id": 3,
-                "name": "Leather Jacket",
-                "description": "Genuine leather jacket with a modern look.",
-                "price": 799000,
-                "stock": 15,
-                "imgUrl": "https://example.com/products/jacket1.jpg",
-                "categoryId": 3,
-                "authorId": 2,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
-            },
             {
                 "id": 4,
                 "name": "Sneakers",
@@ -96,8 +57,18 @@ _Response_:
                 "imgUrl": "https://example.com/products/sneakers1.jpg",
                 "categoryId": 4,
                 "authorId": 2,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 2,
+                    "username": "user1",
+                    "email": "user1@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567891",
+                    "address": "Bandung, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.110Z",
+                    "updatedAt": "2024-10-19T16:29:50.110Z"
+                }
             },
             {
                 "id": 5,
@@ -108,8 +79,18 @@ _Response_:
                 "imgUrl": "https://example.com/products/shoes1.jpg",
                 "categoryId": 5,
                 "authorId": 1,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 1,
+                    "username": "admin",
+                    "email": "admin@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567890",
+                    "address": "Jakarta, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.048Z",
+                    "updatedAt": "2024-10-19T16:29:50.048Z"
+                }
             },
             {
                 "id": 6,
@@ -120,8 +101,18 @@ _Response_:
                 "imgUrl": "https://example.com/products/scarf1.jpg",
                 "categoryId": 6,
                 "authorId": 3,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 3,
+                    "username": "user2",
+                    "email": "user2@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567892",
+                    "address": "Bandung, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.172Z",
+                    "updatedAt": "2024-10-19T16:29:50.172Z"
+                }
             },
             {
                 "id": 7,
@@ -132,8 +123,18 @@ _Response_:
                 "imgUrl": "https://example.com/products/watch1.jpg",
                 "categoryId": 7,
                 "authorId": 3,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 3,
+                    "username": "user2",
+                    "email": "user2@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567892",
+                    "address": "Bandung, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.172Z",
+                    "updatedAt": "2024-10-19T16:29:50.172Z"
+                }
             },
             {
                 "id": 8,
@@ -144,8 +145,18 @@ _Response_:
                 "imgUrl": "https://example.com/products/cap1.jpg",
                 "categoryId": 8,
                 "authorId": 4,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 4,
+                    "username": "user3",
+                    "email": "user3@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567893",
+                    "address": "Surabaya, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.235Z",
+                    "updatedAt": "2024-10-19T16:29:50.235Z"
+                }
             },
             {
                 "id": 9,
@@ -156,20 +167,370 @@ _Response_:
                 "imgUrl": "https://example.com/products/backpack1.jpg",
                 "categoryId": 9,
                 "authorId": 4,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 4,
+                    "username": "user3",
+                    "email": "user3@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567893",
+                    "address": "Surabaya, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.235Z",
+                    "updatedAt": "2024-10-19T16:29:50.235Z"
+                }
+            },
+            {
+                "id": 11,
+                "name": "Wristband",
+                "description": "Stylish wristband with adjustable strap.",
+                "price": 99000,
+                "stock": 100,
+                "imgUrl": "https://example.com/products/wristband1.jpg",
+                "categoryId": 11,
+                "authorId": 5,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 5,
+                    "username": "user4",
+                    "email": "user4@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567894",
+                    "address": "Medan, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.296Z",
+                    "updatedAt": "2024-10-19T16:29:50.296Z"
+                }
+            },
+            {
+                "id": 12,
+                "name": "Graphic T-Shirt",
+                "description": "T-shirt with unique graphic design.",
+                "price": 219000,
+                "stock": 50,
+                "imgUrl": "https://example.com/products/tshirt2.jpg",
+                "categoryId": 1,
+                "authorId": 6,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 6,
+                    "username": "user5",
+                    "email": "user5@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567895",
+                    "address": "Bali, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.358Z",
+                    "updatedAt": "2024-10-19T16:29:50.358Z"
+                }
+            },
+            {
+                "id": 13,
+                "name": "Hoodie",
+                "description": "Comfortable hoodie with front pockets.",
+                "price": 399000,
+                "stock": 35,
+                "imgUrl": "https://example.com/products/hoodie1.jpg",
+                "categoryId": 3,
+                "authorId": 6,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 6,
+                    "username": "user5",
+                    "email": "user5@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567895",
+                    "address": "Bali, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.358Z",
+                    "updatedAt": "2024-10-19T16:29:50.358Z"
+                }
+            },
+            {
+                "id": 14,
+                "name": "Denim Jacket",
+                "description": "Classic denim jacket with button-up front.",
+                "price": 599000,
+                "stock": 18,
+                "imgUrl": "https://example.com/products/jacket2.jpg",
+                "categoryId": 3,
+                "authorId": 2,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 2,
+                    "username": "user1",
+                    "email": "user1@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567891",
+                    "address": "Bandung, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.110Z",
+                    "updatedAt": "2024-10-19T16:29:50.110Z"
+                }
+            },
+            {
+                "id": 15,
+                "name": "Running Shoes",
+                "description": "Lightweight running shoes for comfort and speed.",
+                "price": 399000,
+                "stock": 25,
+                "imgUrl": "https://example.com/products/shoes2.jpg",
+                "categoryId": 4,
+                "authorId": 4,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 4,
+                    "username": "user3",
+                    "email": "user3@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567893",
+                    "address": "Surabaya, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.235Z",
+                    "updatedAt": "2024-10-19T16:29:50.235Z"
+                }
+            },
+            {
+                "id": 16,
+                "name": "Dress Shirt",
+                "description": "Formal dress shirt in classic fit.",
+                "price": 299000,
+                "stock": 40,
+                "imgUrl": "https://example.com/products/shirt1.jpg",
+                "categoryId": 1,
+                "authorId": 5,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 5,
+                    "username": "user4",
+                    "email": "user4@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567894",
+                    "address": "Medan, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.296Z",
+                    "updatedAt": "2024-10-19T16:29:50.296Z"
+                }
+            },
+            {
+                "id": 17,
+                "name": "Leather Belt",
+                "description": "Genuine leather belt with metal buckle.",
+                "price": 199000,
+                "stock": 60,
+                "imgUrl": "https://example.com/products/belt1.jpg",
+                "categoryId": 5,
+                "authorId": 3,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 3,
+                    "username": "user2",
+                    "email": "user2@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567892",
+                    "address": "Bandung, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.172Z",
+                    "updatedAt": "2024-10-19T16:29:50.172Z"
+                }
+            },
+            {
+                "id": 18,
+                "name": "Winter Gloves",
+                "description": "Warm and durable gloves for winter.",
+                "price": 149000,
+                "stock": 55,
+                "imgUrl": "https://example.com/products/gloves1.jpg",
+                "categoryId": 6,
+                "authorId": 6,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 6,
+                    "username": "user5",
+                    "email": "user5@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567895",
+                    "address": "Bali, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.358Z",
+                    "updatedAt": "2024-10-19T16:29:50.358Z"
+                }
+            },
+            {
+                "id": 19,
+                "name": "Casual Shorts",
+                "description": "Comfortable casual shorts for summer.",
+                "price": 249000,
+                "stock": 45,
+                "imgUrl": "https://example.com/products/shorts1.jpg",
+                "categoryId": 2,
+                "authorId": 1,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 1,
+                    "username": "admin",
+                    "email": "admin@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567890",
+                    "address": "Jakarta, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.048Z",
+                    "updatedAt": "2024-10-19T16:29:50.048Z"
+                }
+            },
+            {
+                "id": 20,
+                "name": "Wool Sweater",
+                "description": "Cozy wool sweater for winter days.",
+                "price": 499000,
+                "stock": 25,
+                "imgUrl": "https://example.com/products/sweater1.jpg",
+                "categoryId": 6,
+                "authorId": 6,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 6,
+                    "username": "user5",
+                    "email": "user5@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567895",
+                    "address": "Bali, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.358Z",
+                    "updatedAt": "2024-10-19T16:29:50.358Z"
+                }
+            },
+            {
+                "id": 21,
+                "name": "Leather Boots",
+                "description": "Durable leather boots for outdoor adventures.",
+                "price": 799000,
+                "stock": 30,
+                "imgUrl": "https://example.com/products/boots1.jpg",
+                "categoryId": 4,
+                "authorId": 4,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 4,
+                    "username": "user3",
+                    "email": "user3@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567893",
+                    "address": "Surabaya, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.235Z",
+                    "updatedAt": "2024-10-19T16:29:50.235Z"
+                }
+            },
+            {
+                "id": 22,
+                "name": "Athletic Socks",
+                "description": "Breathable and comfortable athletic socks.",
+                "price": 99000,
+                "stock": 90,
+                "imgUrl": "https://example.com/products/socks1.jpg",
+                "categoryId": 7,
+                "authorId": 5,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 5,
+                    "username": "user4",
+                    "email": "user4@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567894",
+                    "address": "Medan, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.296Z",
+                    "updatedAt": "2024-10-19T16:29:50.296Z"
+                }
+            },
+            {
+                "id": 23,
+                "name": "Cargo Pants",
+                "description": "Comfortable cargo pants with multiple pockets.",
+                "price": 349000,
+                "stock": 35,
+                "imgUrl": "https://example.com/products/cargopants1.jpg",
+                "categoryId": 2,
+                "authorId": 1,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 1,
+                    "username": "admin",
+                    "email": "admin@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567890",
+                    "address": "Jakarta, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.048Z",
+                    "updatedAt": "2024-10-19T16:29:50.048Z"
+                }
+            },
+            {
+                "id": 1,
+                "name": "admin",
+                "description": "keren",
+                "price": 1200000,
+                "stock": 13,
+                "imgUrl": "nkfejf es",
+                "categoryId": 2,
+                "authorId": 1,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T17:40:45.790Z",
+                "User": {
+                    "id": 1,
+                    "username": "admin",
+                    "email": "admin@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567890",
+                    "address": "Jakarta, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.048Z",
+                    "updatedAt": "2024-10-19T16:29:50.048Z"
+                }
             },
             {
                 "id": 10,
-                "name": "Sunglasses",
-                "description": "UV protected stylish sunglasses.",
-                "price": 259000,
-                "stock": 45,
-                "imgUrl": "https://example.com/products/sunglasses1.jpg",
-                "categoryId": 10,
+                "name": "admin",
+                "description": "keren",
+                "price": 1200000,
+                "stock": 13,
+                "imgUrl": "nkfejf es",
+                "categoryId": 2,
                 "authorId": 5,
-                "createdAt": "2024-10-20T19:44:36.862Z",
-                "updatedAt": "2024-10-20T19:44:36.862Z"
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-20T09:29:55.266Z",
+                "User": {
+                    "id": 5,
+                    "username": "user4",
+                    "email": "user4@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567894",
+                    "address": "Medan, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.296Z",
+                    "updatedAt": "2024-10-19T16:29:50.296Z"
+                }
+            },
+            {
+                "id": 2,
+                "name": "admin",
+                "description": "keren",
+                "price": 1200000,
+                "stock": 13,
+                "imgUrl": "nkfejf es",
+                "categoryId": 2,
+                "authorId": 1,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-20T11:13:28.506Z",
+                "User": {
+                    "id": 1,
+                    "username": "admin",
+                    "email": "admin@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567890",
+                    "address": "Jakarta, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.048Z",
+                    "updatedAt": "2024-10-19T16:29:50.048Z"
+                }
             }
         ]
     }
@@ -189,10 +550,10 @@ _Request_:
 
 ```json
 {
-  "search": "5G",
+  "search": "snea",
   "sort": "DESC",
   "filter": {
-    "category": "3,4"
+    "category": "1"
   }
 }
 ```
@@ -203,37 +564,35 @@ _Response_:
 
 ```json
 {
-  "search": "5G",
-  "sort": "DESC",
-  "filter": {
-    "category": "3,4"
-  },
-  "total": 9,
-  "data": [
-    {
-      "id": 4,
-      "name": "SAMSUNG Galaxy A35 5G",
-      "description": "128GB Unlocked Android Smartphone, AMOLED Display, Advanced Triple Camera System, Expandable Storage, Rugged Design, US Version, 2024, Awesome Lilac",
-      "price": 5000000,
-      "stock": 164,
-      "imgUrl": "https://m.media-amazon.com/images/I/71lw4ZWUfYL._AC_SL1500_.jpg",
-      "categoryId": 3,
-      "authorId": 2,
-      "createdAt": "2024-08-22T15:25:58.291Z",
-      "updatedAt": "2024-08-22T15:25:58.291Z",
-      "User": {
-        "id": 2,
-        "username": "rizkyhidayat",
-        "email": "rizkyhidayat@gmail.com",
-        "role": "Staff",
-        "phoneNumber": "088888888888",
-        "address": "BSD",
-        "createdAt": "2024-08-22T15:25:58.163Z",
-        "updatedAt": "2024-08-22T15:25:58.163Z"
-      }
+    "message": "Success read Products",
+    "products": {
+        "search": "snea",
+        "total": 1,
+        "data": [
+            {
+                "id": 4,
+                "name": "Sneakers",
+                "description": "Comfortable sneakers for daily wear.",
+                "price": 499000,
+                "stock": 60,
+                "imgUrl": "https://example.com/products/sneakers1.jpg",
+                "categoryId": 4,
+                "authorId": 2,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 2,
+                    "username": "user1",
+                    "email": "user1@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567891",
+                    "address": "Bandung, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.110Z",
+                    "updatedAt": "2024-10-19T16:29:50.110Z"
+                }
+            }
+        ]
     }
-    ...
-  ]
 }
 ```
 
@@ -257,41 +616,241 @@ _Response_:
 
 ```json
 {
-  "currentPage": 2,
-  "size": 10,
-  "totalPage": 2,
-  "total": 20,
-  "data": [
-    {
-      "id": 11,
-      "name": "SAMSUNG Galaxy A52s 5G",
-      "description": "128GB Unlocked Android Smartphone, 64MP Quad Camera, IP67 Water Resistance, Super AMOLED Display, 2024, Awesome White",
-      "price": 5200000,
-      "stock": 180,
-      "imgUrl": "https://m.media-amazon.com/images/I/71KZfQA-Y7L._AC_SL1500_.jpg",
-      "categoryId": 3,
-      "authorId": 2,
-      "createdAt": "2024-08-22T15:25:58.291Z",
-      "updatedAt": "2024-08-22T15:25:58.291Z",
-      "User": {
-        "id": 2,
-        "username": "rizkyhidayat",
-        "email": "rizkyhidayat@gmail.com",
-        "role": "Staff",
-        "phoneNumber": "088888888888",
-        "address": "BSD",
-        "createdAt": "2024-08-22T15:25:58.163Z",
-        "updatedAt": "2024-08-22T15:25:58.163Z"
-      }
-    },
-    ...
-  ]
+    "message": "Success read Products",
+    "products": {
+        "currentPage": 2,
+        "size": 10,
+        "totalPage": 3,
+        "total": 22,
+        "data": [
+            {
+                "id": 15,
+                "name": "Running Shoes",
+                "description": "Lightweight running shoes for comfort and speed.",
+                "price": 399000,
+                "stock": 25,
+                "imgUrl": "https://example.com/products/shoes2.jpg",
+                "categoryId": 4,
+                "authorId": 4,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 4,
+                    "username": "user3",
+                    "email": "user3@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567893",
+                    "address": "Surabaya, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.235Z",
+                    "updatedAt": "2024-10-19T16:29:50.235Z"
+                }
+            },
+            {
+                "id": 16,
+                "name": "Dress Shirt",
+                "description": "Formal dress shirt in classic fit.",
+                "price": 299000,
+                "stock": 40,
+                "imgUrl": "https://example.com/products/shirt1.jpg",
+                "categoryId": 1,
+                "authorId": 5,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 5,
+                    "username": "user4",
+                    "email": "user4@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567894",
+                    "address": "Medan, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.296Z",
+                    "updatedAt": "2024-10-19T16:29:50.296Z"
+                }
+            },
+            {
+                "id": 17,
+                "name": "Leather Belt",
+                "description": "Genuine leather belt with metal buckle.",
+                "price": 199000,
+                "stock": 60,
+                "imgUrl": "https://example.com/products/belt1.jpg",
+                "categoryId": 5,
+                "authorId": 3,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 3,
+                    "username": "user2",
+                    "email": "user2@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567892",
+                    "address": "Bandung, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.172Z",
+                    "updatedAt": "2024-10-19T16:29:50.172Z"
+                }
+            },
+            {
+                "id": 18,
+                "name": "Winter Gloves",
+                "description": "Warm and durable gloves for winter.",
+                "price": 149000,
+                "stock": 55,
+                "imgUrl": "https://example.com/products/gloves1.jpg",
+                "categoryId": 6,
+                "authorId": 6,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 6,
+                    "username": "user5",
+                    "email": "user5@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567895",
+                    "address": "Bali, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.358Z",
+                    "updatedAt": "2024-10-19T16:29:50.358Z"
+                }
+            },
+            {
+                "id": 19,
+                "name": "Casual Shorts",
+                "description": "Comfortable casual shorts for summer.",
+                "price": 249000,
+                "stock": 45,
+                "imgUrl": "https://example.com/products/shorts1.jpg",
+                "categoryId": 2,
+                "authorId": 1,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 1,
+                    "username": "admin",
+                    "email": "admin@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567890",
+                    "address": "Jakarta, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.048Z",
+                    "updatedAt": "2024-10-19T16:29:50.048Z"
+                }
+            },
+            {
+                "id": 20,
+                "name": "Wool Sweater",
+                "description": "Cozy wool sweater for winter days.",
+                "price": 499000,
+                "stock": 25,
+                "imgUrl": "https://example.com/products/sweater1.jpg",
+                "categoryId": 6,
+                "authorId": 6,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 6,
+                    "username": "user5",
+                    "email": "user5@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567895",
+                    "address": "Bali, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.358Z",
+                    "updatedAt": "2024-10-19T16:29:50.358Z"
+                }
+            },
+            {
+                "id": 21,
+                "name": "Leather Boots",
+                "description": "Durable leather boots for outdoor adventures.",
+                "price": 799000,
+                "stock": 30,
+                "imgUrl": "https://example.com/products/boots1.jpg",
+                "categoryId": 4,
+                "authorId": 4,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 4,
+                    "username": "user3",
+                    "email": "user3@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567893",
+                    "address": "Surabaya, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.235Z",
+                    "updatedAt": "2024-10-19T16:29:50.235Z"
+                }
+            },
+            {
+                "id": 22,
+                "name": "Athletic Socks",
+                "description": "Breathable and comfortable athletic socks.",
+                "price": 99000,
+                "stock": 90,
+                "imgUrl": "https://example.com/products/socks1.jpg",
+                "categoryId": 7,
+                "authorId": 5,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 5,
+                    "username": "user4",
+                    "email": "user4@example.com",
+                    "role": "staff",
+                    "phoneNumber": "081234567894",
+                    "address": "Medan, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.296Z",
+                    "updatedAt": "2024-10-19T16:29:50.296Z"
+                }
+            },
+            {
+                "id": 23,
+                "name": "Cargo Pants",
+                "description": "Comfortable cargo pants with multiple pockets.",
+                "price": 349000,
+                "stock": 35,
+                "imgUrl": "https://example.com/products/cargopants1.jpg",
+                "categoryId": 2,
+                "authorId": 1,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T16:29:50.925Z",
+                "User": {
+                    "id": 1,
+                    "username": "admin",
+                    "email": "admin@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567890",
+                    "address": "Jakarta, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.048Z",
+                    "updatedAt": "2024-10-19T16:29:50.048Z"
+                }
+            },
+            {
+                "id": 1,
+                "name": "admin",
+                "description": "keren",
+                "price": 1200000,
+                "stock": 13,
+                "imgUrl": "nkfejf es",
+                "categoryId": 2,
+                "authorId": 1,
+                "createdAt": "2024-10-19T16:29:50.925Z",
+                "updatedAt": "2024-10-19T17:40:45.790Z",
+                "User": {
+                    "id": 1,
+                    "username": "admin",
+                    "email": "admin@example.com",
+                    "role": "admin",
+                    "phoneNumber": "081234567890",
+                    "address": "Jakarta, Indonesia",
+                    "createdAt": "2024-10-19T16:29:50.048Z",
+                    "updatedAt": "2024-10-19T16:29:50.048Z"
+                }
+            }
+        ]
+    }
 }
 ```
 
 &nbsp;
 
-### 2. GET /pub/products/:id
+### 2. GET /pub/:id
 
 _Request_:
 
@@ -299,7 +858,7 @@ _Request_:
 
 ```json
 {
-  "id": 2
+  "id": 12
 }
 ```
 
@@ -309,18 +868,19 @@ _Responses_
 
 ```json
 {
-  "product": {
-    "id": 2,
-    "name": "SAMSUNG Galaxy S23 FE",
-    "description": "AI Phone, 128GB Unlocked Android Smartphone, Long Battery Life, Premium Processor, Tough Gorilla Glass Display, Hi-Res 50MP Camera, US Version, 2023, Mint",
-    "price": 7800000,
-    "stock": 164,
-    "imgUrl": "https://m.media-amazon.com/images/I/710wVcdWVQL._AC_UF894,1000_QL80_FMwebp_.jpg",
-    "categoryId": 1,
-    "authorId": 1,
-    "createdAt": "2024-08-21T15:15:07.330Z",
-    "updatedAt": "2024-08-21T15:15:07.330Z"
-  }
+    "message": "Success read product with id 12",
+    "product": {
+        "id": 12,
+        "name": "Graphic T-Shirt",
+        "description": "T-shirt with unique graphic design.",
+        "price": 219000,
+        "stock": 50,
+        "imgUrl": "https://example.com/products/tshirt2.jpg",
+        "categoryId": 1,
+        "authorId": 6,
+        "createdAt": "2024-10-19T16:29:50.925Z",
+        "updatedAt": "2024-10-19T16:29:50.925Z"
+    }
 }
 ```
 
@@ -346,7 +906,7 @@ _Request_:
 
 ```json
 {
-  "emailOrUsername": "string",
+  "email": "string",
   "password": "string"
 }
 ```
@@ -367,7 +927,7 @@ _Responses_:
 
 ```json
 {
-  "message": "Invalid login"
+  "message": "Username/Password salah"
 }
 ```
 
@@ -375,7 +935,7 @@ _Responses_:
 
 ```json
 {
-  "message": "Invalid username or email or password"
+  "message": "Unable to login"
 }
 ```
 
@@ -401,32 +961,625 @@ _Response_:
 
 ```json
 {
-  "total": 20,
-  "data": [
-    {
-      "id": 1,
-      "name": "SAMSUNG Galaxy S24 Ultra",
-      "description": "256GB AI Smartphone, Unlocked Android, 50MP Zoom Camera, Long Battery Life, S Pen, US Version, 2024, Titanium Gray",
-      "price": 16400000,
-      "stock": 164,
-      "imgUrl": "https://m.media-amazon.com/images/I/71-EnPs+uQL._AC_SL1500_.jpg",
-      "categoryId": 1,
-      "authorId": 1,
-      "createdAt": "2024-08-22T15:25:58.291Z",
-      "updatedAt": "2024-08-22T15:25:58.291Z",
-      "User": {
-          "id": 1,
-          "username": "geraldsimanullang",
-          "email": "geraldsimanullang@gmail.com",
-          "role": "Admin",
-          "phoneNumber": "081772888548",
-          "address": "Rawa Buntu Utara",
-          "createdAt": "2024-08-22T15:25:58.061Z",
-          "updatedAt": "2024-08-22T15:25:58.061Z"
-      }
-    },
-    ...
-  ]
+    "message": "Success read Products",
+    "products": [
+        {
+            "id": 16,
+            "name": "Dress Shirt",
+            "description": "Formal dress shirt in classic fit.",
+            "price": 299000,
+            "stock": 40,
+            "imgUrl": "https://example.com/products/shirt1.jpg",
+            "categoryId": 1,
+            "authorId": 5,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 5,
+                "username": "user4",
+                "email": "user4@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567894",
+                "address": "Medan, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.296Z",
+                "updatedAt": "2024-10-19T16:29:50.296Z"
+            },
+            "Category": {
+                "id": 1,
+                "name": "T-Shirts",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 12,
+            "name": "Graphic T-Shirt",
+            "description": "T-shirt with unique graphic design.",
+            "price": 219000,
+            "stock": 50,
+            "imgUrl": "https://example.com/products/tshirt2.jpg",
+            "categoryId": 1,
+            "authorId": 6,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 6,
+                "username": "user5",
+                "email": "user5@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567895",
+                "address": "Bali, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.358Z",
+                "updatedAt": "2024-10-19T16:29:50.358Z"
+            },
+            "Category": {
+                "id": 1,
+                "name": "T-Shirts",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 2,
+            "name": "admin",
+            "description": "keren",
+            "price": 1200000,
+            "stock": 13,
+            "imgUrl": "nkfejf es",
+            "categoryId": 2,
+            "authorId": 1,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-20T11:13:28.506Z",
+            "User": {
+                "id": 1,
+                "username": "admin",
+                "email": "admin@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567890",
+                "address": "Jakarta, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.048Z",
+                "updatedAt": "2024-10-19T16:29:50.048Z"
+            },
+            "Category": {
+                "id": 2,
+                "name": "Jeans",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 10,
+            "name": "admin",
+            "description": "keren",
+            "price": 1200000,
+            "stock": 13,
+            "imgUrl": "nkfejf es",
+            "categoryId": 2,
+            "authorId": 5,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-20T09:29:55.266Z",
+            "User": {
+                "id": 5,
+                "username": "user4",
+                "email": "user4@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567894",
+                "address": "Medan, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.296Z",
+                "updatedAt": "2024-10-19T16:29:50.296Z"
+            },
+            "Category": {
+                "id": 2,
+                "name": "Jeans",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 1,
+            "name": "admin",
+            "description": "keren",
+            "price": 1200000,
+            "stock": 13,
+            "imgUrl": "nkfejf es",
+            "categoryId": 2,
+            "authorId": 1,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T17:40:45.790Z",
+            "User": {
+                "id": 1,
+                "username": "admin",
+                "email": "admin@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567890",
+                "address": "Jakarta, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.048Z",
+                "updatedAt": "2024-10-19T16:29:50.048Z"
+            },
+            "Category": {
+                "id": 2,
+                "name": "Jeans",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 23,
+            "name": "Cargo Pants",
+            "description": "Comfortable cargo pants with multiple pockets.",
+            "price": 349000,
+            "stock": 35,
+            "imgUrl": "https://example.com/products/cargopants1.jpg",
+            "categoryId": 2,
+            "authorId": 1,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 1,
+                "username": "admin",
+                "email": "admin@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567890",
+                "address": "Jakarta, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.048Z",
+                "updatedAt": "2024-10-19T16:29:50.048Z"
+            },
+            "Category": {
+                "id": 2,
+                "name": "Jeans",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 19,
+            "name": "Casual Shorts",
+            "description": "Comfortable casual shorts for summer.",
+            "price": 249000,
+            "stock": 45,
+            "imgUrl": "https://example.com/products/shorts1.jpg",
+            "categoryId": 2,
+            "authorId": 1,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 1,
+                "username": "admin",
+                "email": "admin@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567890",
+                "address": "Jakarta, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.048Z",
+                "updatedAt": "2024-10-19T16:29:50.048Z"
+            },
+            "Category": {
+                "id": 2,
+                "name": "Jeans",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 14,
+            "name": "Denim Jacket",
+            "description": "Classic denim jacket with button-up front.",
+            "price": 599000,
+            "stock": 18,
+            "imgUrl": "https://example.com/products/jacket2.jpg",
+            "categoryId": 3,
+            "authorId": 2,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 2,
+                "username": "user1",
+                "email": "user1@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567891",
+                "address": "Bandung, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.110Z",
+                "updatedAt": "2024-10-19T16:29:50.110Z"
+            },
+            "Category": {
+                "id": 3,
+                "name": "Accessories",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 13,
+            "name": "Hoodie",
+            "description": "Comfortable hoodie with front pockets.",
+            "price": 399000,
+            "stock": 35,
+            "imgUrl": "https://example.com/products/hoodie1.jpg",
+            "categoryId": 3,
+            "authorId": 6,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 6,
+                "username": "user5",
+                "email": "user5@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567895",
+                "address": "Bali, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.358Z",
+                "updatedAt": "2024-10-19T16:29:50.358Z"
+            },
+            "Category": {
+                "id": 3,
+                "name": "Accessories",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 21,
+            "name": "Leather Boots",
+            "description": "Durable leather boots for outdoor adventures.",
+            "price": 799000,
+            "stock": 30,
+            "imgUrl": "https://example.com/products/boots1.jpg",
+            "categoryId": 4,
+            "authorId": 4,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 4,
+                "username": "user3",
+                "email": "user3@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567893",
+                "address": "Surabaya, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.235Z",
+                "updatedAt": "2024-10-19T16:29:50.235Z"
+            },
+            "Category": {
+                "id": 4,
+                "name": "Footwear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 15,
+            "name": "Running Shoes",
+            "description": "Lightweight running shoes for comfort and speed.",
+            "price": 399000,
+            "stock": 25,
+            "imgUrl": "https://example.com/products/shoes2.jpg",
+            "categoryId": 4,
+            "authorId": 4,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 4,
+                "username": "user3",
+                "email": "user3@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567893",
+                "address": "Surabaya, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.235Z",
+                "updatedAt": "2024-10-19T16:29:50.235Z"
+            },
+            "Category": {
+                "id": 4,
+                "name": "Footwear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Sneakers",
+            "description": "Comfortable sneakers for daily wear.",
+            "price": 499000,
+            "stock": 60,
+            "imgUrl": "https://example.com/products/sneakers1.jpg",
+            "categoryId": 4,
+            "authorId": 2,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 2,
+                "username": "user1",
+                "email": "user1@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567891",
+                "address": "Bandung, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.110Z",
+                "updatedAt": "2024-10-19T16:29:50.110Z"
+            },
+            "Category": {
+                "id": 4,
+                "name": "Footwear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 17,
+            "name": "Leather Belt",
+            "description": "Genuine leather belt with metal buckle.",
+            "price": 199000,
+            "stock": 60,
+            "imgUrl": "https://example.com/products/belt1.jpg",
+            "categoryId": 5,
+            "authorId": 3,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 3,
+                "username": "user2",
+                "email": "user2@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567892",
+                "address": "Bandung, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.172Z",
+                "updatedAt": "2024-10-19T16:29:50.172Z"
+            },
+            "Category": {
+                "id": 5,
+                "name": "Outerwear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Formal Shoes",
+            "description": "Stylish formal shoes for office and events.",
+            "price": 599000,
+            "stock": 25,
+            "imgUrl": "https://example.com/products/shoes1.jpg",
+            "categoryId": 5,
+            "authorId": 1,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 1,
+                "username": "admin",
+                "email": "admin@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567890",
+                "address": "Jakarta, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.048Z",
+                "updatedAt": "2024-10-19T16:29:50.048Z"
+            },
+            "Category": {
+                "id": 5,
+                "name": "Outerwear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 20,
+            "name": "Wool Sweater",
+            "description": "Cozy wool sweater for winter days.",
+            "price": 499000,
+            "stock": 25,
+            "imgUrl": "https://example.com/products/sweater1.jpg",
+            "categoryId": 6,
+            "authorId": 6,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 6,
+                "username": "user5",
+                "email": "user5@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567895",
+                "address": "Bali, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.358Z",
+                "updatedAt": "2024-10-19T16:29:50.358Z"
+            },
+            "Category": {
+                "id": 6,
+                "name": "Activewear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 18,
+            "name": "Winter Gloves",
+            "description": "Warm and durable gloves for winter.",
+            "price": 149000,
+            "stock": 55,
+            "imgUrl": "https://example.com/products/gloves1.jpg",
+            "categoryId": 6,
+            "authorId": 6,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 6,
+                "username": "user5",
+                "email": "user5@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567895",
+                "address": "Bali, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.358Z",
+                "updatedAt": "2024-10-19T16:29:50.358Z"
+            },
+            "Category": {
+                "id": 6,
+                "name": "Activewear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 6,
+            "name": "Woolen Scarf",
+            "description": "Warm woolen scarf for winter.",
+            "price": 99000,
+            "stock": 80,
+            "imgUrl": "https://example.com/products/scarf1.jpg",
+            "categoryId": 6,
+            "authorId": 3,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 3,
+                "username": "user2",
+                "email": "user2@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567892",
+                "address": "Bandung, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.172Z",
+                "updatedAt": "2024-10-19T16:29:50.172Z"
+            },
+            "Category": {
+                "id": 6,
+                "name": "Activewear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 22,
+            "name": "Athletic Socks",
+            "description": "Breathable and comfortable athletic socks.",
+            "price": 99000,
+            "stock": 90,
+            "imgUrl": "https://example.com/products/socks1.jpg",
+            "categoryId": 7,
+            "authorId": 5,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 5,
+                "username": "user4",
+                "email": "user4@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567894",
+                "address": "Medan, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.296Z",
+                "updatedAt": "2024-10-19T16:29:50.296Z"
+            },
+            "Category": {
+                "id": 7,
+                "name": "Formal Wear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 7,
+            "name": "Classic Watch",
+            "description": "Classic design watch with leather strap.",
+            "price": 1299000,
+            "stock": 20,
+            "imgUrl": "https://example.com/products/watch1.jpg",
+            "categoryId": 7,
+            "authorId": 3,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 3,
+                "username": "user2",
+                "email": "user2@example.com",
+                "role": "admin",
+                "phoneNumber": "081234567892",
+                "address": "Bandung, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.172Z",
+                "updatedAt": "2024-10-19T16:29:50.172Z"
+            },
+            "Category": {
+                "id": 7,
+                "name": "Formal Wear",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 8,
+            "name": "Sports Cap",
+            "description": "Breathable sports cap for outdoor activities.",
+            "price": 149000,
+            "stock": 70,
+            "imgUrl": "https://example.com/products/cap1.jpg",
+            "categoryId": 8,
+            "authorId": 4,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 4,
+                "username": "user3",
+                "email": "user3@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567893",
+                "address": "Surabaya, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.235Z",
+                "updatedAt": "2024-10-19T16:29:50.235Z"
+            },
+            "Category": {
+                "id": 8,
+                "name": "Bags",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 9,
+            "name": "Backpack",
+            "description": "Spacious and durable backpack for travel.",
+            "price": 399000,
+            "stock": 40,
+            "imgUrl": "https://example.com/products/backpack1.jpg",
+            "categoryId": 9,
+            "authorId": 4,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 4,
+                "username": "user3",
+                "email": "user3@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567893",
+                "address": "Surabaya, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.235Z",
+                "updatedAt": "2024-10-19T16:29:50.235Z"
+            },
+            "Category": {
+                "id": 9,
+                "name": "Jewelry",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        },
+        {
+            "id": 11,
+            "name": "Wristband",
+            "description": "Stylish wristband with adjustable strap.",
+            "price": 99000,
+            "stock": 100,
+            "imgUrl": "https://example.com/products/wristband1.jpg",
+            "categoryId": 11,
+            "authorId": 5,
+            "createdAt": "2024-10-19T16:29:50.925Z",
+            "updatedAt": "2024-10-19T16:29:50.925Z",
+            "User": {
+                "id": 5,
+                "username": "user4",
+                "email": "user4@example.com",
+                "role": "staff",
+                "phoneNumber": "081234567894",
+                "address": "Medan, Indonesia",
+                "createdAt": "2024-10-19T16:29:50.296Z",
+                "updatedAt": "2024-10-19T16:29:50.296Z"
+            },
+            "Category": {
+                "id": 11,
+                "name": "Sweaters",
+                "createdAt": "2024-10-19T16:29:50.922Z",
+                "updatedAt": "2024-10-19T16:29:50.922Z"
+            }
+        }
+    ]
 }
 ```
 
@@ -442,12 +1595,12 @@ _Request_:
 
 ```json
 {
-  "name": "SAMSUNG Galaxy A25 5G",
-  "description": "128GB Unlocked Android Smartphone, AMOLED Display, Advanced Triple Camera System, Expandable Storage, Stereo Speakers, US Version, 2024, Black",
-  "price": 3900000,
-  "stock": 200,
-  "imgUrl": "https://m.media-amazon.com/images/I/61cwMOVn17L._AC_SL1500_.jpg",
-  "categoryId": 3
+  "name": "Jeans Bandung",
+  "description": "sangatlah well",
+  "price": 2000000,
+  "stock": 12,
+  "imgUrl": "example.jpg",
+  "categoryId": 1
 }
 ```
 
@@ -457,18 +1610,19 @@ _Responses_:
 
 ```json
 {
-  "newProduct": {
-    "id": 21,
-    "name": "SAMSUNG Galaxy A25 5G",
-    "description": "128GB Unlocked Android Smartphone, AMOLED Display, Advanced Triple Camera System, Expandable Storage, Stereo Speakers, US Version, 2024, Black",
-    "price": 3900000,
-    "stock": 200,
-    "imgUrl": "https://m.media-amazon.com/images/I/61cwMOVn17L._AC_SL1500_.jpg",
-    "categoryId": 3,
-    "authorId": 1,
-    "updatedAt": "2024-08-25T15:55:51.183Z",
-    "createdAt": "2024-08-25T15:55:51.183Z"
-  }
+    "message": "Success create new Product",
+    "product": {
+        "id": 26,
+        "name": "Jeans Bandung",
+        "description": "sangatlah well",
+        "price": 2000000,
+        "stock": 12,
+        "imgUrl": "example.jpg",
+        "categoryId": 1,
+        "authorId": 1,
+        "updatedAt": "2024-10-20T21:44:29.057Z",
+        "createdAt": "2024-10-20T21:44:29.057Z"
+    }
 }
 ```
 
@@ -485,9 +1639,7 @@ _Responses_:
     and or
     "Category is required",
     and or
-    "Price is required", 
-    or 
-    "Minimum price is Rp. 1.000.000",
+    "Price is required"
   ]
 }
 ```
@@ -512,18 +1664,19 @@ _Response_
 
 ```json
 {
-  "product": {
-    "id": 2,
-    "name": "SAMSUNG Galaxy S23 FE",
-    "description": "AI Phone, 128GB Unlocked Android Smartphone, Long Battery Life, Premium Processor, Tough Gorilla Glass Display, Hi-Res 50MP Camera, US Version, 2023, Mint",
-    "price": 7800000,
-    "stock": 164,
-    "imgUrl": "https://m.media-amazon.com/images/I/710wVcdWVQL._AC_UF894,1000_QL80_FMwebp_.jpg",
-    "categoryId": 1,
-    "authorId": 1,
-    "createdAt": "2024-08-21T15:15:07.330Z",
-    "updatedAt": "2024-08-21T15:15:07.330Z"
-  }
+    "message": "Success read product with id 2",
+    "product": {
+        "id": 2,
+        "name": "admin",
+        "description": "keren",
+        "price": 1200000,
+        "stock": 13,
+        "imgUrl": "nkfejf es",
+        "categoryId": 2,
+        "authorId": 1,
+        "createdAt": "2024-10-19T16:29:50.925Z",
+        "updatedAt": "2024-10-20T11:13:28.506Z"
+    }
 }
 ```
 
@@ -533,7 +1686,7 @@ _Response_
 
 ```json
 {
-  "message": "Product not found"
+  "message": "Data not found"
 }
 ```
 
@@ -547,32 +1700,99 @@ _Response_
 
 ```json
 {
-  "categories": [
-    {
-      "id": 1,
-      "name": "Galaxy S Series",
-      "createdAt": "2024-08-21T15:15:07.278Z",
-      "updatedAt": "2024-08-21T15:15:07.278Z"
-    },
-    {
-      "id": 2,
-      "name": "Galaxy Z Series",
-      "createdAt": "2024-08-21T15:15:07.278Z",
-      "updatedAt": "2024-08-21T15:15:07.278Z"
-    },
-    {
-      "id": 3,
-      "name": "Galaxy A Series",
-      "createdAt": "2024-08-21T15:15:07.278Z",
-      "updatedAt": "2024-08-21T15:15:07.278Z"
-    },
-    {
-      "id": 4,
-      "name": "Galaxy M Series",
-      "createdAt": "2024-08-21T15:15:07.278Z",
-      "updatedAt": "2024-08-21T15:15:07.278Z"
-    }
-  ]
+    "message": "Success read Category",
+    "category": [
+        {
+            "id": 1,
+            "name": "T-Shirts",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 2,
+            "name": "Jeans",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 3,
+            "name": "Accessories",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 4,
+            "name": "Footwear",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 5,
+            "name": "Outerwear",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 6,
+            "name": "Activewear",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 7,
+            "name": "Formal Wear",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 8,
+            "name": "Bags",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 9,
+            "name": "Jewelry",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 10,
+            "name": "Hats",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 11,
+            "name": "Sweaters",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 12,
+            "name": "Shorts",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 13,
+            "name": "Skirts",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 14,
+            "name": "Socks",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        },
+        {
+            "id": 15,
+            "name": "Loungewear",
+            "createdAt": "2024-10-19T16:29:50.922Z",
+            "updatedAt": "2024-10-19T16:29:50.922Z"
+        }
+    ]
 }
 ```
 
@@ -631,7 +1851,7 @@ _Requests_:
 
 ```json
 {
-  "name": "Galaxy Watch"
+  "name": "celana bandung"
 }
 ```
 
@@ -639,14 +1859,10 @@ _Responses_:
 
 ```json
 {
-  "updatedCategory": [
-    {
-      "id": 5,
-      "name": "Galaxy Watch",
-      "createdAt": "2024-08-25T17:05:37.422Z",
-      "updatedAt": "2024-08-25T17:14:31.026Z"
-    }
-  ]
+    "message": "Success edit Category",
+    "category": [
+        1
+    ]
 }
 ```
 
@@ -662,35 +1878,8 @@ _Responses_:
 
 &nbsp;
 
-### 10. DELETE /categories:id
 
-_Request_:
 
-- params
-
-```json
-{
-  "id": 5
-}
-```
-
-_Responses_:
-
-```json
-{
-  "message": "Galaxy Watch success to delete"
-}
-```
-
-&nbsp;
-
-- 404 - Not Found _(if category with id < params > doesn't exist in database)_
-
-```json
-{
-  "message": "Category not found"
-}
-```
 
 &nbsp;
 
@@ -704,12 +1893,12 @@ _Request_:
 
 ```json
 {
-  "name": "SAMSUNG Galaxy A25 5G",
-  "description": "128GB Unlocked Android Smartphone, AMOLED Display, Advanced Triple Camera System, Expandable Storage, Stereo Speakers, US Version, 2024, Black",
-  "price": 3900000,
-  "stock": 155,
-  "imgUrl": "https://m.media-amazon.com/images/I/61cwMOVn17L._AC_SL1500_.jpg",
-  "categoryId": 3
+  "name": "CelanaTest",
+  "description": "Celana berbahan sangat lembut",
+  "price": 120000,
+  "stock": 13,
+  "imgUrl": "example.jpg",
+  "categoryId": 2
 }
 ```
 
@@ -719,20 +1908,19 @@ _Responses_:
 
 ```json
 {
-  "updatedProduct": [
-    {
-      "id": 10,
-      "name": "SAMSUNG Galaxy A25 5G",
-      "description": "128GB Unlocked Android Smartphone, AMOLED Display, Advanced Triple Camera System, Expandable Storage, Stereo Speakers, US Version, 2024, Black",
-      "price": 3800000,
-      "stock": 155,
-      "imgUrl": "https://m.media-amazon.com/images/I/61cwMOVn17L._AC_SL1500_.jpg",
-      "categoryId": 3,
-      "authorId": 1,
-      "createdAt": "2024-08-21T15:15:07.330Z",
-      "updatedAt": "2024-08-25T18:18:27.576Z"
+    "message": "Success edit product by id 5",
+    "products": {
+        "id": 5,
+        "name": "CelanaTest",
+        "description": "Celana berbahan sangat lembut",
+        "price": 120000,
+        "stock": 13,
+        "imgUrl": "example.jpg",
+        "categoryId": 2,
+        "authorId": 1,
+        "createdAt": "2024-10-19T16:29:50.925Z",
+        "updatedAt": "2024-10-20T21:52:06.978Z"
     }
-  ]
 }
 ```
 
@@ -746,13 +1934,13 @@ Error 400 - Bad Request will be appeared if violates sequelize validations as li
 
 ```json
 {
-  "message": "Product not found"
+  "message": "Data not found"
 }
 ```
 
 ```json
 {
-  "message": "You are not the author of this product"
+  "message": "You aren`t the author of this product"
 }
 ```
 
@@ -766,7 +1954,7 @@ _Requests_:
 
 ```json
 {
-  "id": 3
+  "id": 2
 }
 ```
 
@@ -774,7 +1962,7 @@ _Requests_:
 
 ```json
 {
-  "image": "< image file upload >"
+  "imgUrl": "< image file upload >"
 }
 ```
 
@@ -784,7 +1972,23 @@ _Response_ :
 
 ```json
 {
-  "message": "Image SAMSUNG Galaxy Z Fold 6 success to update"
+    "message": "Success upload ImgURL",
+    "result": {
+        "fileId": "67157d15e375273f60189b7e",
+        "name": "Photo_on_22-09-24_at_19.05_v_O3diwAP.jpeg",
+        "size": 170177,
+        "versionInfo": {
+            "id": "67157d15e375273f60189b7e",
+            "name": "Version 1"
+        },
+        "filePath": "/Photo_on_22-09-24_at_19.05_v_O3diwAP.jpeg",
+        "url": "https://ik.imagekit.io/raffles16/Photo_on_22-09-24_at_19.05_v_O3diwAP.jpeg",
+        "fileType": "image",
+        "height": 960,
+        "width": 1440,
+        "thumbnailUrl": "https://ik.imagekit.io/raffles16/tr:n-ik_ml_thumbnail/Photo_on_22-09-24_at_19.05_v_O3diwAP.jpeg",
+        "AITags": null
+    }
 }
 ```
 
@@ -794,7 +1998,7 @@ _Response_ :
 
 ```json
 {
-  "message": "Image is required"
+  "message": "imgUrl is required"
 }
 ```
 
@@ -802,7 +2006,7 @@ _Response_ :
 
 ```json
 {
-  "message": "Product not found"
+  "message": "Data not found"
 }
 ```
 
@@ -810,7 +2014,7 @@ _Response_ :
 
 ```json
 {
-  "message": "You are not the author of this product"
+  "message": "You aren`t the author of this product"
 }
 ```
 
@@ -824,7 +2028,7 @@ _Request_:
 
 ```json
 {
-  "id": 20
+  "id": 12
 }
 ```
 
@@ -832,7 +2036,7 @@ _Responses_:
 
 ```json
 {
-  "message": "SAMSUNG Galaxy A14 5G success to delete"
+    "message": "Success delete product by id 12"
 }
 ```
 
@@ -842,7 +2046,7 @@ _Responses_:
 
 ```json
 {
-  "message": "Product not found"
+  "message": "Data not found"
 }
 ```
 
@@ -850,7 +2054,7 @@ _Responses_:
 
 ```json
 {
-  "message": "You are not the author of this product"
+  "message": "You aren`t the author of this product"
 }
 ```
 
@@ -866,10 +2070,11 @@ _Request_:
 
 ```json
 {
-  "username": "natasyathalia",
-  "email": "natasyathalia@gmail.com",
-  "phoneNumber": "088888888888",
-  "address": "Jl. Nowhere No. 1"
+  "username": "test",
+  "email": "mamang12@gmail.com",
+  "password": "123456789",
+  "phoneNumber": "123456789",
+  "address": "Jakarta"
 }
 ```
 
@@ -879,16 +2084,18 @@ _Responses_:
 
 ```json
 {
-  "newUserWithoutPassword": {
-    "id": 4,
-    "username": "natasyathalia",
-    "email": "natasyathalia@gmail.com",
-    "role": "Staff",
-    "phoneNumber": "088888888888",
-    "address": "Jl. Nowhere No. 1",
-    "createdAt": "2024-08-25T17:48:30.109Z",
-    "updatedAt": "2024-08-25T17:48:30.109Z"
-  }
+    "message": "Success create new user",
+    "user": {
+        "role": "Staff",
+        "id": 24,
+        "username": "test",
+        "email": "mamang12@gmail.com",
+        "password": "$2a$10$eKTu/V5aWHxisF4sgLjw/OdPE.EX7l30sH7wREkaEbrvEayys3HjW",
+        "phoneNumber": "123456789",
+        "address": "Jakarta",
+        "updatedAt": "2024-10-20T22:03:39.523Z",
+        "createdAt": "2024-10-20T22:03:39.523Z"
+    }
 }
 ```
 
@@ -898,9 +2105,13 @@ _Responses_:
 
 ```json
 {
-  "message": ["Email is required"],
+    "message": [
+        "email is required"
+    ]
+}
   or
-  "messsage": ["Email is already used"]
+  {
+    "message": "email must be unique"
 }
 ```
 
@@ -916,7 +2127,7 @@ _Responses_:
 
 ```json
 {
-  "message": "Only admin can add new user"
+  "message": "You have no access"
 }
 ```
 
@@ -932,7 +2143,7 @@ If has not logged in yet
 
 ```json
 {
-  "message": "Please log in first"
+  "message": "Please login first"
 }
 ```
 
@@ -942,7 +2153,7 @@ If access token is invalid
 
 ```json
 {
-  "message": "Please log in again"
+  "message": "Please login first"
 }
 ```
 
