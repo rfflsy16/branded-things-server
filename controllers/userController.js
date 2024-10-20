@@ -33,7 +33,7 @@ class UserController {
                 }
             })
             // console.log(author)
-            if (!author) throw {name: 'LoginError'}
+            if (!author) throw {name: 'notFound'}
 
             if (!compare(password, author.password)) throw { name: "LoginError" } 
 

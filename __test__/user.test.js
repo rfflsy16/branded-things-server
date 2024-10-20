@@ -67,8 +67,8 @@ describe('POST /login', () => {
                 email: 'mamang10@gmail.com',
                 password: 'password123'
             })
-            expect(response.status).toBe(400)        
-            expect(response.body.message).toBe('Unable to login')
+            expect(response.status).toBe(404)        
+            expect(response.body.message).toBe('Data not found')
         })
     })
     describe('POST /login - fail', () => {
@@ -79,8 +79,8 @@ describe('POST /login', () => {
                 email: 'mamang10@gmail.com',
                 password: 'password12356'
             })
-            expect(response.status).toBe(400)        
-            expect(response.body.message).toBe('Unable to login')
+            expect(response.status).toBe(404)        
+            expect(response.body.message).toBe('Data not found')
         })
     })
 })
