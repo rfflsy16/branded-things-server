@@ -331,10 +331,10 @@ describe('GET /pub', () => {
     describe('GET /pub - succeed', () => {
         it('should be return an all data of production', async () => {
             const response = await request(app)
-            .get('/pub/?filter=2')
+            .get('/pub/?filter[category]=1')
 
             expect(response.status).toBe(200)
-            expect(response.body).toHaveProperty('result')
+            expect(response.body).toHaveProperty('products')
             expect(response.body).toBeInstanceOf(Object)
         })
     })
@@ -344,7 +344,7 @@ describe('GET /pub', () => {
             .get('/pub/?page=1')
 
             expect(response.status).toBe(200)
-            expect(response.body).toHaveProperty('result')
+            expect(response.body).toHaveProperty('products')
             expect(response.body).toBeInstanceOf(Object)
         })
     })
@@ -354,7 +354,7 @@ describe('GET /pub', () => {
             .get('/pub/?page=1')
 
             expect(response.status).toBe(200)
-            expect(response.body).toHaveProperty('result')
+            expect(response.body).toHaveProperty('products')
             expect(response.body).toBeInstanceOf(Object)
         })
     })

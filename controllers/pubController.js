@@ -5,56 +5,66 @@ const category = require('../models/category');
 class PubController {
     static async read(req, res, next) {
         try {
-             let queryOption = {};
-
-            const { filter } = req.query;
-            if (filter && typeof filter === 'string') {
-                const categoryIds = filter.split(',').map(id => id.trim());
-                queryOption.where = {
-                    categoryId: {
-                        [Op.or]: categoryIds.map(id => ({ [Op.eq]: id }))
-                    }
-                };
-            }
-
-            let { sort } = req.query;
-            if (sort && typeof sort === 'string') {
-                if (sort.charAt(0) === '-') {
-                    queryOption.order = [[sort.slice(1), 'DESC']];
-                } else {
-                    queryOption.order = [[sort, 'ASC']];
-                }
-            }
-
-            let { page = 1 } = req.query;
-            page = Number(page);
-            if (isNaN(page) || page < 1) {
-                page = 1;
-            }
-
-            const limit = 10; 
-            const offset = (page - 1) * limit;
-
-            const { count, rows } = await Product.findAndCountAll({
-                ...queryOption,
-                limit: limit,
-                offset: offset
-            });
-
-            const totalPage = Math.ceil(count / limit);
-
-            const result = {
-                total: count,
-                size: limit,
-                totalPage: totalPage,
-                currentPage: page,
-                data: rows
+            const { search, sort, filter, page } = req.query;
+            const queryOption = {
+                where: {},
+                include: [
+                    {
+                        model: User,
+                        attributes: {
+                            exclude: ["password"],
+                        },
+                    },
+                ],
             };
+            const products = {};
 
+            if (search !== "" && typeof search !== "undefined") {
+                queryOption.where.name = {
+                    [Op.iLike]: `%${search}%`,
+                };
+
+                products.search = search;
+            }
+
+            if (sort !== "" && typeof sort !== "undefined") {
+                queryOption.order = [["createdAt", `${sort}`]];
+
+                products.sort = sort;
+            }
+
+            if (filter !== "" && typeof filter !== "undefined") {
+                const filterOption = filter.category.split(",");
+
+                queryOption.where.categoryId = {
+                    [Op.in]: filterOption,
+                };
+
+                products.filter = filter;
+            }
+
+            const limit = 10;
+
+            if (page !== "" && typeof page !== "undefined") {
+                queryOption.limit = limit;
+                queryOption.offset = (Number(page) - 1) * limit;
+
+                products.currentPage = Number(page);
+                products.size = limit;
+            }
+
+            const { count, rows } = await Product.findAndCountAll(queryOption);
+
+            if (!isNaN(products.currentPage)) {
+                products.totalPage = Math.ceil(count / limit);
+            }
+
+            products.total = count;
+            products.data = rows;
 
             res.status(200).json({
                 message: 'Success read Products',
-                result
+                products
             });
         } catch (err) {
             console.log(err)
